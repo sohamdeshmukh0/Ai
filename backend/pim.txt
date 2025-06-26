@@ -1,0 +1,7 @@
+A Product Information Management (PIM) system serves as a centralized hub for collecting,
+managing, and enriching product data. In an e-commerce environment, where consistent and 
+accurate product details are essential across multiple channels like websites, mobile apps,
+marketplaces, and print catalogs, a PIM ensures that all product-related information stays
+updated and synchronized. It allows teams to streamline product onboarding, 
+improve time-to-market, and reduce manual errors.
+
