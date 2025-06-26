@@ -1,1 +1,14 @@
+services:
+  - type: web
+    name: backend-app
+    env: python
+    repo: https://github.com/sohamdeshmukh0/Ai
+    branch: master
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "python backend/run.py"
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
 
