@@ -1,24 +1,23 @@
 from typing import Optional
-
+ 
 def build_context_from_inputs(
-    project_title: str,
+    title: str,
     business_model: str,
     project_type: str,
-    references: str,
-    project_summary: str,
-    client_background: str,
+    # project_refers: str,
+    summary: str,
+    background: str,
     document_text: Optional[str] = None
 ) -> str:
     context = f"""
-     Project Title: {project_title}
+     Project Title: {title}
      Business Model: {business_model}
      Project Type: {project_type}
-     References: {references}
-     Project Summary: {project_summary}
-     Client Background: {client_background}
+     Project Summary: {summary}
+     Client Background: {background}
     """
-
+ 
     if document_text:
         context += f"\n Additional Document Info:\n{document_text[:]}"
-
+ 
     return context
